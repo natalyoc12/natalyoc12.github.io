@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta http-equiv="refresh" content="0;url=https://www.colegiouniversal.co">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <meta http-equiv="refresh" content="5;url=https://www.colegiouniversal.co">
     <script type="text/javascript">
         setTimeout(function() {
             window.location.href = "https://www.colegiouniversal.co";
-        }, 0);
+        }, 5000);
     </script>
+    <style>
+        section {
+            background: rgb(142,37,45);
+            background: linear-gradient(90deg, rgba(142,37,45,1) 20%, rgba(77,52,52,1) 51%, rgba(11,40,70,1) 80%);
+        }
+
+        section > div {
+            background-color: rgba(255, 255, 255, .3);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+
+    </style>
 </head>
 <body>
-    <h3>universalhomeschool.co ahora es colegiouniversal.co</h3>
-    <p>Si no eres redirigido automáticamente, <a href="https://www.colegiouniversal.co">haz clic aquí</a>.</p>
+    <section class="h-screen flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center bg-white p-8 rounded-3xl">
+            <h2 class="font-sans text-lg font-bold">Nos hemos actualizado, ahora somos COLEGIO UNIVERSAL</h2>
+            <div class="flex items-center justify-center gap-35">
+                <img src="img/escudo2.png" alt="Colegio Universal" class="h-40">
+                <img src="img/escudo1.png" alt="Colegio Universal" class="h-40">
+            </div>
+            <h3 class="font-sans text-lg font-bold">universalhomeschool.co ahora es colegiouniversal.co</h3>
+            <p class="font-sans text-lg">
+                Si no eres redirigido automáticamente, 
+                <a class="text-blue-900 font-bold underline" href="https://www.colegiouniversal.co">haz clic aquí</a>.
+            </p>
+        </div>
+    </section>
 </body>
 </html>
